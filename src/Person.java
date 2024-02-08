@@ -85,6 +85,15 @@ public class Person {
         pets.add(pet);
     }
 
+    public List<String> getPets() {
+        List<String> petsName = new ArrayList<>();
+        for(Pet pet : pets) {
+            petsName.add(pet.getName());
+        }
+        return petsName;
+    }
+
+
     public List<String> getChildren() {
     List<String> childrenNames = new ArrayList<>();
         for (Person child : children) {
